@@ -6,9 +6,7 @@ requires 'Class::Accessor::Fast' => 0;
 requires 'HTML::TokeParser' => 0;
 requires 'WWW::Mechanize' => 0;
 
-build_requires 'Test::More';
-
+test_requires 'Test::More' => '0.88';
 use_test_base;
 
-auto_include;
 WriteAll;
