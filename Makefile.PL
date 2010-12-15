@@ -9,4 +9,6 @@ requires 'WWW::Mechanize' => 0;
 test_requires 'Test::More' => '0.88';
 use_test_base;
 
+auto_set_repository;
+
 WriteAll;
