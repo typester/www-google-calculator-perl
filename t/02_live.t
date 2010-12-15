@@ -55,13 +55,13 @@ __END__
 --- input
 8%7
 --- expected
-8 modulo 7 = 1
+8 mod 7 = 1
 
 === X choose Y determines the number of ways of choosing a set of Y elements from a set of X elements
 --- input
 18 choose 4
 --- expected
-18 choose 4 = 3 060
+18 choose 4 = 3060
 
 === calculates the nth root of a number
 --- input

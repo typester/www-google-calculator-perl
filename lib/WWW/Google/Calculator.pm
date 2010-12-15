@@ -7,7 +7,7 @@ use WWW::Mechanize;
 use HTML::TokeParser;
 use URI;
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 __PACKAGE__->mk_accessors(qw/mech error/);
 
@@ -95,10 +95,10 @@ sub parse_html {
         next
           unless ( $token->[0] || '' ) eq 'S'
           && ( $token->[1]        || '' ) eq 'img'
-          && ( $token->[2]->{src} || '' ) eq '/images/calc_img.gif';
+          && ( $token->[2]->{src} || '' ) eq '/images/icons/onebox/calculator-40.gif';
 
-        $p->get_tag('b');
-        $res = $p->get_trimmed_text('/b');
+        $p->get_tag('h2');
+        $res = $p->get_trimmed_text('/h2');
     }
 
     $res;
