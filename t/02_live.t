@@ -128,3 +128,9 @@ log(1 000) = 3
 10^20
 --- expected
 10^20 = 1.0 * 10^20
+
+=== currency
+--- input
+1 usd in eur
+--- expected regexp
+1 U.S. dollar = \S+ Euros
