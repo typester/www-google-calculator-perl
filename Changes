@@ -1,5 +1,8 @@
 Revision history for Perl module WWW::Google::Calculator
 
+0.07 2010-12-24T10:08:28+09:00
+     - Fixed broken currency calculations (Danijel Tasov)
+
 0.06 2010-12-15T10:46:15+09:00
      - Update for latest Google pages
        (Reported and fixed by Zok, Mike Heise)
